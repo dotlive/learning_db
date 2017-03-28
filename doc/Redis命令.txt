@@ -14,4 +14,17 @@ DEL:
 删除键。可以一次性删除多个键；
 
 TYPE:
-获得键值的数据类型
+获得键值的数据类型；
+
+EXPIRE / TTL:   // 单位：s
+PEXPIRE / PTTL:	// 单位：ms
+    设置 / 查询过期时间；
+EXPIREAT / PEXPIREAT:
+    设置生存时间的截止时间；
+PERSIST:
+    取消键的生存时间设置（SET/GET 也会清除键的生存时间）；
+
+SORT:
+
+OBJECT ENCODING:
+查看一个键的内部编码方式；
